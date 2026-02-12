@@ -1,15 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme inline {
+  --color-primary: #1E5B3A;
+  --color-secondary: #174A2F;
+  --color-accent: #174A2F;
+  /* Replaced Yellow with Dark Green */
+  --color-surface: #E7F2EC;
+  --color-background: #ffffff;
+  --color-foreground: #1C1F1D;
+
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  /* Green / Institutional Palette */
+  --primary: #1E5B3A;
+  /* Brand Green */
+  --secondary: #174A2F;
+  /* Dark Green (Hover/Accents) */
+  --accent: #174A2F;
+  /* Replaced Yellow with Dark Green for precision */
+  --surface: #E7F2EC;
+  /* Light Green Background */
+
+  --foreground: #1C1F1D;
+  /* Dark Grey/Black Text */
+  --background: #ffffff;
+  /* White */
+
+  --font-ibm-plex: 'IBM Plex Sans', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +39,55 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-ibm-plex);
+}
+
+/* Force override to ensure Green is visible immediately */
+.bg-primary {
+  background-color: #1E5B3A !important;
+}
+
+.text-primary {
+  color: #1E5B3A !important;
+}
+
+.border-primary {
+  border-color: #1E5B3A !important;
+}
+
+.bg-secondary {
+  background-color: #174A2F !important;
+}
+
+.text-secondary {
+  color: #174A2F !important;
+}
+
+.border-secondary {
+  border-color: #174A2F !important;
+}
+
+.bg-surface {
+  background-color: #E7F2EC !important;
+}
+
+.text-surface {
+  color: #E7F2EC !important;
+}
+
+.border-surface {
+  border-color: #E7F2EC !important;
+}
+
+.text-accent {
+  color: #174A2F !important;
+}
+
+/* Maps to Dark Green now */
