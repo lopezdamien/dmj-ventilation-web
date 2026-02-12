@@ -11,7 +11,7 @@ export default function SIGPartnership() {
                 style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
             </div>
 
-            <div className="container mx-auto px-4 md:px-8 relative z-10">
+            <div className="container mx-auto px-6 md:px-8 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-20 items-start">
 
                     {/* Left Column: Text Content */}

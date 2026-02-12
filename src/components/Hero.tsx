@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1E5B3A] via-[#1E5B3A]/95 to-[#1E5B3A]/80" />
             </div>
 
-            <div className="container mx-auto px-4 md:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="container mx-auto px-6 md:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Text Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -42,16 +42,16 @@ export default function Hero() {
                         Conception, installation et optimisation de systèmes de ventilation pour les régies, industries et particuliers.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-6">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
                         <a
                             href="#contact"
-                            className="px-8 py-3 bg-surface text-primary font-bold uppercase tracking-widest hover:bg-white transition-all text-center text-sm"
+                            className="w-full sm:w-auto px-8 py-4 bg-surface text-primary font-bold uppercase tracking-widest hover:bg-white transition-all text-center text-sm"
                         >
                             Étude de projet
                         </a>
                         <a
                             href="#services"
-                            className="px-8 py-3 border border-surface text-surface font-bold uppercase tracking-widest hover:bg-surface hover:text-primary transition-all text-center text-sm"
+                            className="w-full sm:w-auto px-8 py-4 border border-surface text-surface font-bold uppercase tracking-widest hover:bg-surface hover:text-primary transition-all text-center text-sm"
                         >
                             Nos solutions
                         </a>

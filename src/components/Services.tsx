@@ -38,7 +38,7 @@ export default function Services() {
 
     return (
         <section id="services" className="py-20 md:py-32 bg-white text-secondary">
-            <div className="container mx-auto px-4 md:px-8">
+            <div className="container mx-auto px-6 md:px-8">
 
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8 md:gap-12 border-b border-gray-100 pb-12">
                     <div className="max-w-2xl">
@@ -56,7 +56,7 @@ export default function Services() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12">
                     {services.map((service, index) => (
                         <div
                             key={index}

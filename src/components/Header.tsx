@@ -35,7 +35,7 @@ export default function Header() {
                     : "bg-primary text-white border-transparent py-3"
             )}
         >
-            <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <div className="container mx-auto px-6 md:px-8 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
                     <span className="text-xl md:text-2xl font-bold tracking-tighter uppercase">

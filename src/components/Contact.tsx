@@ -59,28 +59,28 @@ export default function Contact() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div>
                                     <label htmlFor="name" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Nom Complet</label>
-                                    <input type="text" id="name" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Nom" />
+                                    <input type="text" id="name" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Nom" />
                                 </div>
                                 <div>
                                     <label htmlFor="company" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Entreprise</label>
-                                    <input type="text" id="company" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Société" />
+                                    <input type="text" id="company" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Société" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div>
                                     <label htmlFor="email" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Email</label>
-                                    <input type="email" id="email" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="email@exemple.com" />
+                                    <input type="email" id="email" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="email@exemple.com" />
                                 </div>
                                 <div>
                                     <label htmlFor="phone" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Téléphone</label>
-                                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="+41 79..." />
+                                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="+41 79..." />
                                 </div>
                             </div>
 
                             <div>
                                 <label htmlFor="message" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Message</label>
-                                <textarea id="message" rows={3} className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Décrivez votre projet..."></textarea>
+                                <textarea id="message" rows={3} className="w-full bg-gray-50 border border-gray-200 p-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Décrivez votre projet..."></textarea>
                             </div>
 
                             <button type="submit" className="w-full bg-primary text-white font-bold uppercase tracking-widest py-3 text-xs relative overflow-hidden group hover:bg-secondary transition-all rounded-sm mt-2">
