@@ -60,7 +60,7 @@ export default function Services() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative h-full flex flex-col pt-8 border-t border-gray-100 hover:border-primary transition-colors duration-500"
+                            className="group relative h-full flex flex-col pt-8 px-6 border border-transparent hover:border-secondary transition-colors duration-500 rounded-sm"
                         >
                             {/* Label */}
                             <div className="mb-8">
