@@ -5,9 +5,9 @@ import { MapPin, Phone, Mail, Send, Facebook, Linkedin, Instagram, Clock } from 
 
 export default function Contact() {
     return (
-        <footer id="contact" className="bg-primary text-white py-32 relative overflow-hidden">
+        <footer id="contact" className="bg-primary text-white py-20 md:py-32 relative overflow-hidden">
             {/* Background Decor */}
-            <div className="absolute top-0 right-0 w-2/3 h-full bg-secondary/30 -skew-x-12 transform translate-x-1/3"></div>
+            <div className="hidden md:block absolute top-0 right-0 w-2/3 h-full bg-secondary/30 -skew-x-12 transform translate-x-1/3"></div>
 
             <div className="container mx-auto px-4 md:px-8 relative z-10 max-w-4xl">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-20 items-start">
@@ -59,28 +59,28 @@ export default function Contact() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div>
                                     <label htmlFor="name" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Nom Complet</label>
-                                    <input type="text" id="name" className="w-full bg-gray-50 border border-gray-200 p-2 text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Nom" />
+                                    <input type="text" id="name" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Nom" />
                                 </div>
                                 <div>
                                     <label htmlFor="company" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Entreprise</label>
-                                    <input type="text" id="company" className="w-full bg-gray-50 border border-gray-200 p-2 text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Société" />
+                                    <input type="text" id="company" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Société" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div>
                                     <label htmlFor="email" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Email</label>
-                                    <input type="email" id="email" className="w-full bg-gray-50 border border-gray-200 p-2 text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="email@exemple.com" />
+                                    <input type="email" id="email" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="email@exemple.com" />
                                 </div>
                                 <div>
                                     <label htmlFor="phone" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Téléphone</label>
-                                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 p-2 text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="+41 79..." />
+                                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="+41 79..." />
                                 </div>
                             </div>
 
                             <div>
                                 <label htmlFor="message" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Message</label>
-                                <textarea id="message" rows={3} className="w-full bg-gray-50 border border-gray-200 p-2 text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Décrivez votre projet..."></textarea>
+                                <textarea id="message" rows={3} className="w-full bg-gray-50 border border-gray-200 p-3 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Décrivez votre projet..."></textarea>
                             </div>
 
                             <button type="submit" className="w-full bg-primary text-white font-bold uppercase tracking-widest py-3 text-xs relative overflow-hidden group hover:bg-secondary transition-all rounded-sm mt-2">

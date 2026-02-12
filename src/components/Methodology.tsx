@@ -43,8 +43,11 @@ export default function Methodology() {
                 </h2>
 
                 <div className="relative">
-                    {/* Connecting Line - Ultra Thin */}
+                    {/* Connecting Line - Horizontal (Desktop) */}
                     <div className="hidden md:block absolute top-[24px] left-0 w-full h-px bg-gray-200 z-0"></div>
+
+                    {/* Connecting Line - Vertical (Mobile) */}
+                    <div className="md:hidden absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-gray-200 z-0"></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-12 relative z-10">
                         {steps.map((step, index) => (
@@ -54,13 +57,13 @@ export default function Methodology() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="flex flex-col items-center group"
+                                className="flex flex-col items-center group bg-white py-4 md:py-0"
                             >
-                                <div className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-primary group-hover:border-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 mb-8 z-10">
+                                <div className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-primary group-hover:border-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 mb-6 md:mb-8 z-10">
                                     <step.icon size={20} strokeWidth={1.5} />
                                 </div>
-                                <h3 className="text-base font-bold uppercase tracking-wide text-primary mb-3">{index + 1}. {step.title}</h3>
-                                <p className="text-xs text-gray-500 font-medium max-w-[140px] mx-auto leading-relaxed">{step.description}</p>
+                                <h3 className="text-base font-bold uppercase tracking-wide text-primary mb-2 md:mb-3 bg-white px-2 z-10">{index + 1}. {step.title}</h3>
+                                <p className="text-xs text-gray-500 font-medium max-w-[200px] md:max-w-[140px] mx-auto leading-relaxed bg-white z-10">{step.description}</p>
                             </motion.div>
                         ))}
                     </div>

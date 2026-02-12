@@ -32,7 +32,7 @@ export default function Hero() {
                         <span className="text-surface font-mono tracking-widest uppercase text-xs md:text-sm block mb-2 opacity-90">
                             Ingénierie Aéraulique Suisse
                         </span>
-                        <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-tight">
+                        <h1 className="text-4xl md:text-7xl font-black tracking-tight leading-tight">
                             SWISS<br />
                             AIR QUALITY.
                         </h1>

@@ -37,10 +37,10 @@ export default function Services() {
     ];
 
     return (
-        <section id="services" className="py-32 bg-white text-secondary">
+        <section id="services" className="py-20 md:py-32 bg-white text-secondary">
             <div className="container mx-auto px-4 md:px-8">
 
-                <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-12 border-b border-gray-100 pb-12">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8 md:gap-12 border-b border-gray-100 pb-12">
                     <div className="max-w-2xl">
                         <span className="text-gray-400 font-mono tracking-widest uppercase mb-4 block text-xs">
                     /// Savoir-faire
@@ -50,7 +50,7 @@ export default function Services() {
                         </h2>
                     </div>
                     <div className="max-w-lg">
-                        <p className="text-base font-light text-gray-500 leading-relaxed text-justify">
+                        <p className="text-base font-light text-gray-500 leading-relaxed text-justify md:text-right">
                             "De l’installation à l’optimisation énergétique, nous intervenons sur l’ensemble du cycle de vie de vos systèmes pour garantir performance et durabilité."
                         </p>
                     </div>

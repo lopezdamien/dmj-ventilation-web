@@ -82,38 +82,40 @@ export default function Header() {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: "100%" }}
                         transition={{ type: "tween", duration: 0.3 }}
-                        className="fixed inset-0 bg-primary z-[60] flex flex-col"
+                        className="fixed inset-0 bg-primary/98 backdrop-blur-md z-[100] flex flex-col"
                     >
-                        <div className="p-5 flex justify-between items-center border-b border-accent/20 h-20">
+                        <div className="p-5 flex justify-between items-center border-b border-white/10 h-20">
                             <span className="text-2xl font-bold text-white uppercase tracking-tighter">
-                                DMJ<span className="text-accent">.Ventilation</span>
+                                DMJ<span className="text-surface">.Ventilation</span>
                             </span>
                             <button
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="p-2 text-white hover:text-accent transition-colors"
+                                className="p-2 text-white hover:text-surface transition-colors rounded-full hover:bg-white/10"
                             >
-                                <X size={32} />
+                                <X size={28} />
                             </button>
                         </div>
 
-                        <nav className="flex-1 flex flex-col justify-center items-center gap-8 p-8">
+                        <nav className="flex-1 flex flex-col justify-center items-center gap-6 p-8 relative overflow-y-auto">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-3xl font-bold text-white hover:text-accent uppercase tracking-widest transition-colors"
+                                    className="text-2xl md:text-3xl font-bold text-white hover:text-surface uppercase tracking-widest transition-colors py-2"
                                 >
                                     {link.name}
                                 </Link>
                             ))}
 
+                            <div className="w-12 h-px bg-white/20 my-4"></div>
+
                             <Link
                                 href="#contact"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="mt-8 px-8 py-4 bg-accent text-primary font-bold text-xl uppercase tracking-wider hover:bg-white transition-colors flex items-center gap-3 w-full justify-center rounded-md"
+                                className="px-8 py-4 bg-surface text-primary font-bold text-lg uppercase tracking-wider hover:bg-white transition-colors flex items-center gap-3 w-full max-w-xs justify-center rounded-sm shadow-lg"
                             >
-                                <Phone size={24} />
+                                <Phone size={20} />
                                 Contactez-nous
                             </Link>
                         </nav>
