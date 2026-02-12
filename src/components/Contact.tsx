@@ -1,111 +1,146 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Send, Facebook, Linkedin, Instagram, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Send, Clock, ArrowRight } from "lucide-react";
 
 export default function Contact() {
     return (
-        <footer id="contact" className="bg-primary text-white py-20 md:py-32 relative overflow-hidden">
-            {/* Background Decor */}
-            <div className="hidden md:block absolute top-0 right-0 w-2/3 h-full bg-secondary/30 -skew-x-12 transform translate-x-1/3"></div>
+        <footer id="contact">
+            {/* ZONE A: CTA BAND */}
+            <section className="bg-primary py-16 md:py-20 text-white relative overflow-hidden">
+                {/* Subtle pattern or gradient */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#266e48] to-primary opacity-50"></div>
 
-            <div className="container mx-auto px-4 md:px-8 relative z-10 max-w-4xl">
-                <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-20 items-start">
-
-                    {/* Contact Info Side */}
-                    <div className="lg:w-1/2 space-y-8">
-                        <div>
-                            <span className="text-surface font-mono tracking-widest uppercase mb-2 block text-xs">
-                                /// Contact
-                            </span>
-                            <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6 leading-none">
-                                PARLONS<br />PROJET.
-                            </h2>
-                            <div className="w-12 h-px bg-surface mb-6 opacity-50"></div>
-
-                            <div className="inline-flex items-center gap-3 text-surface font-bold uppercase tracking-wide bg-white/5 p-2 px-3 border-l border-surface text-[10px] rounded-r-sm">
-                                <Clock size={14} />
-                                <span>Réponse garantie sous 24h</span>
-                            </div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="space-y-1">
-                                <h4 className="font-bold uppercase tracking-wider text-[10px] text-gray-400 flex items-center gap-2">
-                                    <MapPin size={12} className="text-surface" /> Siège Social
-                                </h4>
-                                <p className="font-medium text-sm leading-snug pl-5 text-gray-200">Chemin des Semales 1<br />1290 Versoix, Suisse</p>
-                            </div>
-
-                            <div className="space-y-1">
-                                <h4 className="font-bold uppercase tracking-wider text-[10px] text-gray-400 flex items-center gap-2">
-                                    <Phone size={12} className="text-surface" /> Téléphone
-                                </h4>
-                                <a href="tel:+41791234567" className="font-medium text-sm hover:text-surface transition-colors pl-5 block text-gray-200">+41 79 123 45 67</a>
-                            </div>
-
-                            <div className="space-y-1">
-                                <h4 className="font-bold uppercase tracking-wider text-[10px] text-gray-400 flex items-center gap-2">
-                                    <Mail size={12} className="text-surface" /> Email
-                                </h4>
-                                <a href="mailto:info@dmj-ventilation.ch" className="font-medium text-sm hover:text-surface transition-colors pl-5 block text-gray-200">info@dmj-ventilation.ch</a>
-                            </div>
-                        </div>
+                <div className="container mx-auto px-6 md:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
+                    <div className="max-w-2xl">
+                        <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-2">
+                            Un projet ? Parlons-en.
+                        </h2>
+                        <p className="text-surface/90 font-medium text-lg">
+                            Réponse sous 24h – Audit et étude technique personnalisée.
+                        </p>
                     </div>
+                    <div>
+                        <a href="mailto:info@dmj-ventilation.ch" className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-surface transition-colors rounded-sm shadow-lg">
+                            Demander un devis
+                            <ArrowRight size={16} />
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-                    {/* Contact Form Side - Extremely Compact */}
-                    <div className="lg:w-1/2 w-full bg-white text-secondary p-6 shadow-sm relative border border-gray-100 rounded-sm">
-                        <form className="space-y-3">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                <div>
-                                    <label htmlFor="name" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Nom Complet</label>
-                                    <input type="text" id="name" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Nom" />
-                                </div>
-                                <div>
-                                    <label htmlFor="company" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Entreprise</label>
-                                    <input type="text" id="company" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Votre Société" />
-                                </div>
-                            </div>
+            {/* ZONE B: STRUCTURED CONTACT BLOCK */}
+            <section className="bg-surface py-20 md:py-28 text-secondary relative">
+                <div className="container mx-auto px-6 md:px-8">
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                <div>
-                                    <label htmlFor="email" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Email</label>
-                                    <input type="email" id="email" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="email@exemple.com" />
-                                </div>
-                                <div>
-                                    <label htmlFor="phone" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Téléphone</label>
-                                    <input type="tel" id="phone" className="w-full bg-gray-50 border border-gray-200 h-12 px-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="+41 79..." />
-                                </div>
-                            </div>
-
+                        {/* Left Column: Info */}
+                        <div className="lg:w-2/5 space-y-10">
                             <div>
-                                <label htmlFor="message" className="block text-[10px] font-bold uppercase tracking-widest mb-1 text-gray-400">Message</label>
-                                <textarea id="message" rows={3} className="w-full bg-gray-50 border border-gray-200 p-4 text-base md:text-xs focus:border-primary focus:bg-white focus:outline-none transition-all font-semibold rounded-sm" placeholder="Décrivez votre projet..."></textarea>
+                                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 flex items-center gap-2">
+                                    <span className="w-8 h-px bg-primary"></span>
+                                    Nos Coordonnées
+                                </h3>
+                                <h4 className="text-3xl md:text-4xl font-black text-primary tracking-tight mb-6">
+                                    DMJ VENTILATION
+                                </h4>
+                                <p className="text-gray-600 leading-relaxed text-sm md:text-base mb-8">
+                                    Notre bureau d’étude vous accompagne de la conception à la maintenance de vos installations aérauliques.
+                                </p>
                             </div>
 
-                            <button type="submit" className="w-full bg-primary text-white font-bold uppercase tracking-widest py-3 text-xs relative overflow-hidden group hover:bg-secondary transition-all rounded-sm mt-2">
-                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                    Envoyer
-                                    <Send size={12} className="group-hover:translate-x-1 transition-transform" />
-                                </span>
-                            </button>
-                        </form>
+                            <div className="space-y-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-sm bg-white border border-gray-100 flex items-center justify-center text-primary shadow-sm shrink-0">
+                                        <MapPin size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Siège Social</p>
+                                        <p className="font-semibold text-primary">Chemin des Semales 1,<br />1290 Versoix</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-sm bg-white border border-gray-100 flex items-center justify-center text-primary shadow-sm shrink-0">
+                                        <Phone size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Téléphone</p>
+                                        <a href="tel:+41791234567" className="font-semibold text-primary hover:text-secondary transition-colors">+41 79 123 45 67</a>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-sm bg-white border border-gray-100 flex items-center justify-center text-primary shadow-sm shrink-0">
+                                        <Mail size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Email</p>
+                                        <a href="mailto:info@dmj-ventilation.ch" className="font-semibold text-primary hover:text-secondary transition-colors">info@dmj-ventilation.ch</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right Column: Form */}
+                        <div className="lg:w-3/5">
+                            <div className="bg-white p-8 md:p-10 rounded-sm shadow-sm border border-gray-100">
+                                <h3 className="text-xl font-bold text-primary mb-8 tracking-tight">Formulaire de contact</h3>
+                                <form className="space-y-5">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="space-y-1">
+                                            <label htmlFor="name" className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Nom Complet</label>
+                                            <input type="text" id="name" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white transition-colors rounded-sm text-sm font-medium outline-none" placeholder="Votre nom" />
+                                        </div>
+                                        <div className="space-y-1">
+                                            <label htmlFor="company" className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Entreprise</label>
+                                            <input type="text" id="company" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white transition-colors rounded-sm text-sm font-medium outline-none" placeholder="Votre société" />
+                                        </div>
+                                    </div>
+
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="space-y-1">
+                                            <label htmlFor="email" className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Email</label>
+                                            <input type="email" id="email" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white transition-colors rounded-sm text-sm font-medium outline-none" placeholder="votre@email.com" />
+                                        </div>
+                                        <div className="space-y-1">
+                                            <label htmlFor="phone" className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Téléphone</label>
+                                            <input type="tel" id="phone" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white transition-colors rounded-sm text-sm font-medium outline-none" placeholder="+41 79..." />
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-1">
+                                        <label htmlFor="message" className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Message</label>
+                                        <textarea id="message" rows={4} className="w-full p-4 bg-gray-50 border border-gray-200 focus:border-primary focus:bg-white transition-colors rounded-sm text-sm font-medium outline-none resize-none" placeholder="Détails de votre demande..."></textarea>
+                                    </div>
+
+                                    <div className="pt-4">
+                                        <button type="submit" className="w-full md:w-[80%] bg-primary text-white h-12 font-bold uppercase tracking-widest text-xs hover:bg-secondary transition-all rounded-sm shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                                            <span>Envoyer le message</span>
+                                            <Send size={14} />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                {/* Footer Bottom */}
-                <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-mono">
-                    <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
-                        <span className="font-bold text-white uppercase tracking-wider">DMJ<span className="text-surface">.Ventilation</span></span>
-                        <span className="hidden md:inline text-white/20">|</span>
-                        <span>© {new Date().getFullYear()} Tous droits réservés.</span>
-                    </div>
-                    <div className="flex gap-6">
-                        <a href="#" className="hover:text-surface transition-colors uppercase font-bold tracking-wider">Mentions Légales</a>
-                        <a href="#" className="hover:text-surface transition-colors uppercase font-bold tracking-wider">Confidentialité</a>
+                {/* ZONE C: FOOTER BOTTOM */}
+                <div className="pt-16 mt-16 container mx-auto px-6 md:px-8 border-t border-gray-200">
+                    <div className="flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-mono gap-4">
+                        <div className="flex items-center gap-2">
+                            <span className="font-bold text-primary uppercase tracking-wider">DMJ.Ventilation</span>
+                            <span className="text-gray-300">|</span>
+                            <span>© {new Date().getFullYear()} Tous droits réservés.</span>
+                        </div>
+                        <div className="flex gap-6">
+                            <a href="#" className="hover:text-primary transition-colors uppercase font-bold tracking-wider">Mentions Légales</a>
+                            <a href="#" className="hover:text-primary transition-colors uppercase font-bold tracking-wider">Confidentialité</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </footer>
     );
 }
