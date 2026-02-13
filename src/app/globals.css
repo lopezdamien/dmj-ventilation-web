@@ -93,3 +93,13 @@ body {
 }
 
 /* Maps to Dark Green now */
+
+.bg-primary-light {
+  background-color: #256e46 !important;
+}
+
+.bg-pattern {
+  background-image: radial-gradient(#1E5B3A 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  background-opacity: 0.05;
+}

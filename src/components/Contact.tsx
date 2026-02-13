@@ -7,9 +7,9 @@ export default function Contact() {
     return (
         <footer id="contact">
             {/* ZONE A: CTA BAND */}
-            <section className="bg-primary py-16 md:py-20 text-white relative overflow-hidden">
+            <section className="bg-primary-light py-16 md:py-20 text-white relative overflow-hidden">
                 {/* Subtle pattern or gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#266e48] to-primary opacity-50"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-light via-[#2d8554] to-primary-light opacity-50"></div>
 
                 <div className="container mx-auto px-6 md:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
                     <div className="max-w-2xl">
@@ -30,7 +30,7 @@ export default function Contact() {
             </section>
 
             {/* ZONE B: STRUCTURED CONTACT BLOCK */}
-            <section className="bg-surface py-20 md:py-28 text-secondary relative">
+            <section className="bg-surface bg-pattern py-20 md:py-28 text-secondary relative">
                 <div className="container mx-auto px-6 md:px-8">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
 
