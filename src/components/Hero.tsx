@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative h-screen flex items-center bg-primary text-white overflow-hidden pt-20">
+        <section className="relative min-h-[80vh] md:h-screen flex items-center bg-primary text-white overflow-hidden pt-24 pb-12 md:pt-20 md:pb-0">
             {/* Background with Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -20,15 +20,15 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1E5B3A] via-[#1E5B3A]/95 to-[#1E5B3A]/80" />
             </div>
 
-            <div className="container mx-auto px-6 md:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="container mx-auto px-6 md:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-center md:text-left">
                 {/* Text Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="space-y-12"
+                    className="space-y-8 md:space-y-12"
                 >
-                    <div className="inline-block border-l-2 border-surface/50 pl-6">
+                    <div className="inline-block border-l-2 border-surface/50 pl-6 md:mx-0 mx-auto">
                         <span className="text-surface font-mono tracking-widest uppercase text-xs md:text-sm block mb-2 opacity-90">
                             Ingénierie Aéraulique Suisse
                         </span>
@@ -38,7 +38,7 @@ export default function Hero() {
                         </h1>
                     </div>
 
-                    <p className="text-lg md:text-xl text-white/90 max-w-lg font-light leading-relaxed">
+                    <p className="text-lg md:text-xl text-white/90 max-w-lg font-light leading-relaxed mx-auto md:mx-0">
                         Conception, installation et optimisation de systèmes de ventilation pour les régies, industries et particuliers.
                     </p>
 

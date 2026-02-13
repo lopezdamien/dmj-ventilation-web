@@ -33,12 +33,12 @@ export default function Methodology() {
     ];
 
     return (
-        <section className="py-32 bg-white">
+        <section className="py-10 md:py-32 bg-white">
             <div className="container mx-auto px-4 md:px-8 text-center">
                 <span className="text-gray-400 font-mono tracking-widest uppercase mb-4 block text-xs">
             /// Processus
                 </span>
-                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-primary mb-24 uppercase">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight text-primary mb-12 md:mb-24 uppercase">
                     Notre Méthode
                 </h2>
 

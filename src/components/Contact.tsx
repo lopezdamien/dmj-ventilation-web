@@ -7,16 +7,16 @@ export default function Contact() {
     return (
         <footer id="contact">
             {/* ZONE A: CTA BAND */}
-            <section className="bg-primary-light py-16 md:py-20 text-white relative overflow-hidden">
+            <section className="bg-primary-light py-10 md:py-20 text-white relative overflow-hidden">
                 {/* Subtle pattern or gradient */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-light via-[#2d8554] to-primary-light opacity-50"></div>
 
-                <div className="container mx-auto px-6 md:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 text-center md:text-left">
+                <div className="container mx-auto px-6 md:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 text-center md:text-left">
                     <div className="max-w-2xl">
-                        <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-2">
+                        <h2 className="text-2xl md:text-4xl font-black tracking-tight mb-2">
                             Un projet ? Parlons-en.
                         </h2>
-                        <p className="text-surface/90 font-medium text-lg">
+                        <p className="text-surface/90 font-medium text-base md:text-lg">
                             Réponse sous 24h – Audit et étude technique personnalisée.
                         </p>
                     </div>
@@ -30,14 +30,14 @@ export default function Contact() {
             </section>
 
             {/* ZONE B: STRUCTURED CONTACT BLOCK */}
-            <section className="bg-surface bg-pattern py-20 md:py-28 text-secondary relative">
+            <section className="bg-surface bg-pattern py-10 md:py-28 text-secondary relative">
                 <div className="container mx-auto px-6 md:px-8">
-                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+                    <div className="flex flex-col lg:flex-row gap-10 lg:gap-24">
 
                         {/* Left Column: Info */}
-                        <div className="lg:w-2/5 space-y-10">
+                        <div className="lg:w-2/5 space-y-8 md:space-y-10 text-center md:text-left">
                             <div>
-                                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 flex items-center gap-2">
+                                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 flex items-center justify-center md:justify-start gap-2">
                                     <span className="w-8 h-px bg-primary"></span>
                                     Nos Coordonnées
                                 </h3>
@@ -50,7 +50,7 @@ export default function Contact() {
                             </div>
 
                             <div className="space-y-6">
-                                <div className="flex items-start gap-4">
+                                <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
                                     <div className="w-10 h-10 rounded-sm bg-white border border-gray-100 flex items-center justify-center text-primary shadow-sm shrink-0">
                                         <MapPin size={18} />
                                     </div>

@@ -37,10 +37,10 @@ export default function Services() {
     ];
 
     return (
-        <section id="services" className="py-20 md:py-32 bg-white text-secondary">
+        <section id="services" className="py-12 md:py-32 bg-white text-secondary">
             <div className="container mx-auto px-6 md:px-8">
 
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8 md:gap-12 border-b border-gray-100 pb-12">
+                <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-24 gap-6 md:gap-12 border-b border-gray-100 pb-8 md:pb-12 text-center md:text-left">
                     <div className="max-w-2xl">
                         <span className="text-gray-400 font-mono tracking-widest uppercase mb-4 block text-xs">
                     /// Savoir-faire
@@ -50,13 +50,13 @@ export default function Services() {
                         </h2>
                     </div>
                     <div className="max-w-lg">
-                        <p className="text-base font-light text-gray-500 leading-relaxed text-justify md:text-right">
+                        <p className="text-base font-light text-gray-500 leading-relaxed text-center md:text-right">
                             "De l’installation à l’optimisation énergétique, nous intervenons sur l’ensemble du cycle de vie de vos systèmes pour garantir performance et durabilité."
                         </p>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                     {services.map((service, index) => (
                         <div
                             key={index}
